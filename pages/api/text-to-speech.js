@@ -112,7 +112,8 @@ export default async function handler(req, res) {
           const timingPath = join(timingDir, timingFilename);
 
           await writeFile(audioPath, audioBuffer);
-          await writeFile(timingPath, JSON.stringify(timingData, null, 2));
+          await writeFile(timingPath, JSON.stringify([timingData], null, 2));
+
 
           // Send response
           res.status(200).json({

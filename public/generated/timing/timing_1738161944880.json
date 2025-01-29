@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "token": "this",
+      "start": 0,
+      "stop": 216
+    },
+    {
+      "token": "is",
+      "start": 216,
+      "stop": 362
+    },
+    {
+      "token": "just",
+      "start": 362,
+      "stop": 683
+    },
+    {
+      "token": "a",
+      "start": 683,
+      "stop": 802
+    },
+    {
+      "token": "test",
+      "start": 802,
+      "stop": 1298
+    }
+  ]
+]
