@@ -1,0 +1,402 @@
+[
+  {
+    "token": "The",
+    "start": 0,
+    "stop": 183
+  },
+  {
+    "token": "clock",
+    "start": 183,
+    "stop": 451
+  },
+  {
+    "token": "struck",
+    "start": 451,
+    "stop": 805
+  },
+  {
+    "token": "1158",
+    "start": 805,
+    "stop": 1816
+  },
+  {
+    "token": "PM",
+    "start": 1816,
+    "stop": 2168
+  },
+  {
+    "token": "as",
+    "start": 2168,
+    "stop": 2303
+  },
+  {
+    "token": "Ethan",
+    "start": 2303,
+    "stop": 2614
+  },
+  {
+    "token": "sprinted",
+    "start": 2614,
+    "stop": 3104
+  },
+  {
+    "token": "through",
+    "start": 3104,
+    "stop": 3310
+  },
+  {
+    "token": "the",
+    "start": 3310,
+    "stop": 3437
+  },
+  {
+    "token": "empty",
+    "start": 3437,
+    "stop": 3725
+  },
+  {
+    "token": "station",
+    "start": 3725,
+    "stop": 4193
+  },
+  {
+    "token": "The",
+    "start": 4193,
+    "stop": 4278
+  },
+  {
+    "token": "last",
+    "start": 4278,
+    "stop": 4631
+  },
+  {
+    "token": "train",
+    "start": 4631,
+    "stop": 4908
+  },
+  {
+    "token": "home",
+    "start": 4908,
+    "stop": 5241
+  },
+  {
+    "token": "was",
+    "start": 5241,
+    "stop": 5433
+  },
+  {
+    "token": "already",
+    "start": 5433,
+    "stop": 5848
+  },
+  {
+    "token": "at",
+    "start": 5848,
+    "stop": 5975
+  },
+  {
+    "token": "the",
+    "start": 5975,
+    "stop": 6080
+  },
+  {
+    "token": "platform",
+    "start": 6080,
+    "stop": 6711
+  },
+  {
+    "token": "its",
+    "start": 6711,
+    "stop": 6865
+  },
+  {
+    "token": "doors",
+    "start": 6865,
+    "stop": 7202
+  },
+  {
+    "token": "about",
+    "start": 7202,
+    "stop": 7460
+  },
+  {
+    "token": "to",
+    "start": 7460,
+    "stop": 7573
+  },
+  {
+    "token": "close",
+    "start": 7573,
+    "stop": 7935
+  },
+  {
+    "token": "Breathless",
+    "start": 7935,
+    "stop": 8383
+  },
+  {
+    "token": "he",
+    "start": 8383,
+    "stop": 8472
+  },
+  {
+    "token": "leaped",
+    "start": 8472,
+    "stop": 8810
+  },
+  {
+    "token": "through",
+    "start": 8810,
+    "stop": 8985
+  },
+  {
+    "token": "the",
+    "start": 8985,
+    "stop": 9120
+  },
+  {
+    "token": "doors",
+    "start": 9120,
+    "stop": 9434
+  },
+  {
+    "token": "just",
+    "start": 9434,
+    "stop": 9732
+  },
+  {
+    "token": "as",
+    "start": 9732,
+    "stop": 9882
+  },
+  {
+    "token": "they",
+    "start": 9882,
+    "stop": 10056
+  },
+  {
+    "token": "slid",
+    "start": 10056,
+    "stop": 10372
+  },
+  {
+    "token": "shut",
+    "start": 10372,
+    "stop": 10653
+  },
+  {
+    "token": "behind",
+    "start": 10653,
+    "stop": 11007
+  },
+  {
+    "token": "him",
+    "start": 11007,
+    "stop": 11223
+  },
+  {
+    "token": "The",
+    "start": 11223,
+    "stop": 11334
+  },
+  {
+    "token": "carriage",
+    "start": 11334,
+    "stop": 11672
+  },
+  {
+    "token": "was",
+    "start": 11672,
+    "stop": 11865
+  },
+  {
+    "token": "eerily",
+    "start": 11865,
+    "stop": 12226
+  },
+  {
+    "token": "silent—too",
+    "start": 12226,
+    "stop": 13098
+  },
+  {
+    "token": "silent",
+    "start": 13098,
+    "stop": 13539
+  },
+  {
+    "token": "No",
+    "start": 13539,
+    "stop": 13782
+  },
+  {
+    "token": "conductor",
+    "start": 13782,
+    "stop": 14317
+  },
+  {
+    "token": "no",
+    "start": 14317,
+    "stop": 14519
+  },
+  {
+    "token": "passengers",
+    "start": 14519,
+    "stop": 15199
+  },
+  {
+    "token": "just",
+    "start": 15199,
+    "stop": 15453
+  },
+  {
+    "token": "dim",
+    "start": 15453,
+    "stop": 15669
+  },
+  {
+    "token": "yellow",
+    "start": 15669,
+    "stop": 15939
+  },
+  {
+    "token": "lights",
+    "start": 15939,
+    "stop": 16345
+  },
+  {
+    "token": "flickering",
+    "start": 16345,
+    "stop": 16858
+  },
+  {
+    "token": "overhead",
+    "start": 16858,
+    "stop": 17381
+  },
+  {
+    "token": "Ethan",
+    "start": 17381,
+    "stop": 17680
+  },
+  {
+    "token": "took",
+    "start": 17680,
+    "stop": 17870
+  },
+  {
+    "token": "a",
+    "start": 17870,
+    "stop": 17956
+  },
+  {
+    "token": "seat",
+    "start": 17956,
+    "stop": 18327
+  },
+  {
+    "token": "trying",
+    "start": 18327,
+    "stop": 18775
+  },
+  {
+    "token": "to",
+    "start": 18775,
+    "stop": 18911
+  },
+  {
+    "token": "catch",
+    "start": 18911,
+    "stop": 19190
+  },
+  {
+    "token": "his",
+    "start": 19190,
+    "stop": 19379
+  },
+  {
+    "token": "breath",
+    "start": 19379,
+    "stop": 19692
+  },
+  {
+    "token": "That’s",
+    "start": 19692,
+    "stop": 19927
+  },
+  {
+    "token": "when",
+    "start": 19927,
+    "stop": 20085
+  },
+  {
+    "token": "he",
+    "start": 20085,
+    "stop": 20208
+  },
+  {
+    "token": "noticed",
+    "start": 20208,
+    "stop": 20600
+  },
+  {
+    "token": "something",
+    "start": 20600,
+    "stop": 21004
+  },
+  {
+    "token": "strange",
+    "start": 21004,
+    "stop": 21536
+  },
+  {
+    "token": "The",
+    "start": 21536,
+    "stop": 21653
+  },
+  {
+    "token": "window",
+    "start": 21653,
+    "stop": 22084
+  },
+  {
+    "token": "didn’t",
+    "start": 22084,
+    "stop": 22363
+  },
+  {
+    "token": "show",
+    "start": 22363,
+    "stop": 22624
+  },
+  {
+    "token": "the",
+    "start": 22624,
+    "stop": 22765
+  },
+  {
+    "token": "city",
+    "start": 22765,
+    "stop": 23119
+  },
+  {
+    "token": "outside—it",
+    "start": 23119,
+    "stop": 23918
+  },
+  {
+    "token": "showed",
+    "start": 23918,
+    "stop": 24222
+  },
+  {
+    "token": "endless",
+    "start": 24222,
+    "stop": 24662
+  },
+  {
+    "token": "darkness",
+    "start": 24662,
+    "stop": 25289
+  }
+]

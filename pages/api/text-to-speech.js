@@ -1,27 +1,27 @@
 // pages/api/text-to-speech.js
-import { WebSocket } from 'ws';
-import { IamAuthenticator } from 'ibm-cloud-sdk-core';
-import TextToSpeechV1  from 'ibm-watson/text-to-speech/v1';
-import { writeFile } from 'fs/promises';
-import { join } from 'path';
-import { mkdir } from 'fs/promises';
+import { WebSocket } from "ws";
+import { IamAuthenticator } from "ibm-cloud-sdk-core";
+import TextToSpeechV1 from "ibm-watson/text-to-speech/v1";
+import { writeFile } from "fs/promises";
+import { join } from "path";
+import { mkdir } from "fs/promises";
 
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '1mb',
+      sizeLimit: "1mb",
     },
     responseLimit: false,
   },
 };
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
-    const { text } = req.body;
+    const { text, voice } = req.body;
 
     // Initialize Watson TTS
     const tts = new TextToSpeechV1({
@@ -40,7 +40,8 @@ export default async function handler(req, res) {
       `/instances/${process.env.WATSON_INSTANCE_ID}/v1/synthesize`,
       process.env.WATSON_SERVICE_URL.replace("https", "wss")
     );
-    wsUrl.searchParams.set('access_token', accessToken);
+    wsUrl.searchParams.set("access_token", accessToken);
+    wsUrl.searchParams.set("voice", voice); // Add voice parameter
 
     // Generate unique filename based on timestamp
     const timestamp = Date.now();
@@ -48,8 +49,8 @@ export default async function handler(req, res) {
     const timingFilename = `timing_${timestamp}.json`;
 
     // Create directories if they don't exist
-    const audioDir = join(process.cwd(), 'public', 'generated', 'audio');
-    const timingDir = join(process.cwd(), 'public', 'generated', 'timing');
+    const audioDir = join(process.cwd(), "public", "generated", "audio");
+    const timingDir = join(process.cwd(), "public", "generated", "timing");
     await mkdir(audioDir, { recursive: true });
     await mkdir(timingDir, { recursive: true });
 
@@ -61,17 +62,18 @@ export default async function handler(req, res) {
     return new Promise((resolve, reject) => {
       const ws = new WebSocket(wsUrl.toString());
 
-      ws.on('open', () => {
+      ws.on("open", () => {
         const synthesisRequest = {
           text,
           accept: "audio/wav",
           timings: ["words"],
+          voice: voice, // Include voice in the synthesis request
         };
 
         ws.send(JSON.stringify(synthesisRequest));
       });
 
-      ws.on('message', (data) => {
+      ws.on("message", (data) => {
         try {
           const jsonData = JSON.parse(data);
           if (jsonData.marks) {
@@ -82,7 +84,7 @@ export default async function handler(req, res) {
             timingData.push({
               token: word,
               start: Math.round(start * 1000),
-              stop: Math.round(end * 1000)
+              stop: Math.round(end * 1000),
             });
           }
         } catch (e) {
@@ -91,17 +93,19 @@ export default async function handler(req, res) {
         }
       });
 
-      ws.on('close', async () => {
+      ws.on("close", async () => {
         try {
           // Process marks
           marks.forEach(([name, time]) => {
             const timeMs = Math.round(time * 1000);
-            const insertIndex = timingData.findIndex(item => item.start >= timeMs);
+            const insertIndex = timingData.findIndex(
+              (item) => item.start >= timeMs
+            );
             if (insertIndex !== -1) {
               timingData.splice(insertIndex, 0, {
                 token: name,
                 start: timeMs,
-                stop: timeMs
+                stop: timeMs,
               });
             }
           });
@@ -119,7 +123,7 @@ export default async function handler(req, res) {
           res.status(200).json({
             audioUrl: `/generated/audio/${audioFilename}`,
             timingUrl: `/generated/timing/${timingFilename}`,
-            message: 'Files generated successfully'
+            message: "Files generated successfully",
           });
           resolve();
         } catch (error) {
@@ -127,12 +131,12 @@ export default async function handler(req, res) {
         }
       });
 
-      ws.on('error', (error) => {
+      ws.on("error", (error) => {
         reject(error);
       });
     });
   } catch (error) {
-    console.error('Error in text-to-speech generation:', error);
+    console.error("Error in text-to-speech generation:", error);
     res.status(500).json({ error: error.message });
   }
 }

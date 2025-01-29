@@ -1,0 +1,132 @@
+[
+  {
+    "token": "The",
+    "start": 0,
+    "stop": 132
+  },
+  {
+    "token": "clock",
+    "start": 132,
+    "stop": 416
+  },
+  {
+    "token": "struck",
+    "start": 416,
+    "stop": 768
+  },
+  {
+    "token": "1158",
+    "start": 768,
+    "stop": 1690
+  },
+  {
+    "token": "PM",
+    "start": 1696,
+    "stop": 2189
+  },
+  {
+    "token": "as",
+    "start": 2324,
+    "stop": 2470
+  },
+  {
+    "token": "Ethan",
+    "start": 2470,
+    "stop": 2789
+  },
+  {
+    "token": "sprinted",
+    "start": 2789,
+    "stop": 3227
+  },
+  {
+    "token": "through",
+    "start": 3227,
+    "stop": 3411
+  },
+  {
+    "token": "the",
+    "start": 3411,
+    "stop": 3554
+  },
+  {
+    "token": "empty",
+    "start": 3554,
+    "stop": 3831
+  },
+  {
+    "token": "station",
+    "start": 3831,
+    "stop": 4421
+  },
+  {
+    "token": "The",
+    "start": 4549,
+    "stop": 4620
+  },
+  {
+    "token": "last",
+    "start": 4620,
+    "stop": 5012
+  },
+  {
+    "token": "train",
+    "start": 5012,
+    "stop": 5305
+  },
+  {
+    "token": "home",
+    "start": 5305,
+    "stop": 5538
+  },
+  {
+    "token": "was",
+    "start": 5538,
+    "stop": 5692
+  },
+  {
+    "token": "already",
+    "start": 5692,
+    "stop": 6083
+  },
+  {
+    "token": "at",
+    "start": 6083,
+    "stop": 6165
+  },
+  {
+    "token": "the",
+    "start": 6165,
+    "stop": 6246
+  },
+  {
+    "token": "platform",
+    "start": 6246,
+    "stop": 6854
+  },
+  {
+    "token": "its",
+    "start": 6989,
+    "stop": 7147
+  },
+  {
+    "token": "doors",
+    "start": 7147,
+    "stop": 7441
+  },
+  {
+    "token": "about",
+    "start": 7441,
+    "stop": 7733
+  },
+  {
+    "token": "to",
+    "start": 7733,
+    "stop": 7821
+  },
+  {
+    "token": "close",
+    "start": 7821,
+    "stop": 8410
+  }
+]
