@@ -1,0 +1,59 @@
+[
+  [
+    {
+      "token": "there",
+      "start": 0,
+      "stop": 196
+    },
+    {
+      "token": "was",
+      "start": 196,
+      "stop": 346
+    },
+    {
+      "token": "once",
+      "start": 346,
+      "stop": 656
+    },
+    {
+      "token": "a",
+      "start": 656,
+      "stop": 715
+    },
+    {
+      "token": "man",
+      "start": 715,
+      "stop": 991
+    },
+    {
+      "token": "who",
+      "start": 991,
+      "stop": 1086
+    },
+    {
+      "token": "used",
+      "start": 1086,
+      "stop": 1373
+    },
+    {
+      "token": "to",
+      "start": 1373,
+      "stop": 1469
+    },
+    {
+      "token": "go",
+      "start": 1469,
+      "stop": 1649
+    },
+    {
+      "token": "do",
+      "start": 1649,
+      "stop": 1793
+    },
+    {
+      "token": "nothing",
+      "start": 1793,
+      "stop": 2242
+    }
+  ]
+]

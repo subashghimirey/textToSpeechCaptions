@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "token": "bro",
+      "start": 0,
+      "stop": 246
+    },
+    {
+      "token": "you",
+      "start": 246,
+      "stop": 427
+    },
+    {
+      "token": "are",
+      "start": 427,
+      "stop": 498
+    },
+    {
+      "token": "woring",
+      "start": 498,
+      "stop": 863
+    },
+    {
+      "token": "right?",
+      "start": 863,
+      "stop": 1169
+    }
+  ]
+]

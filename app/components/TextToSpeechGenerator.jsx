@@ -84,8 +84,11 @@ const TextToSpeechGenerator = () => {
     try {
       const cleanedText = cleanText(inputText);
 
+
+
       const response = await fetch("/api/text-to-speech", {
         method: "POST",
+       
         headers: {
           "Content-Type": "application/json",
         },
@@ -94,6 +97,9 @@ const TextToSpeechGenerator = () => {
           voice: selectedVoice,
         }),
       });
+
+      // console.log(TextToSpeechGenerator);
+      console.log(response);
 
       if (!response.ok) {
         throw new Error("Failed to generate speech");
